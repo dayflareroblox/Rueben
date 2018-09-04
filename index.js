@@ -193,7 +193,7 @@ if (cmd === `${prefix}report`){
   
   
     let bEmbed = new Discord.RichEmbed()
-    .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png)    
+    .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png")    
     .setDescription("/BAN/")
     .setColor("#FF0033")
     .addField("Banned User.", `${bUser} with the ID: ${bUser.id}`)
