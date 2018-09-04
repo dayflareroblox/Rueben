@@ -9,9 +9,9 @@ const bot = new Discord.Client({disableEveryone: true});
 //---------------------------------------------------------------\\//---------------------------------------------------------------\\
 
 bot.on('ready',() => {
-bot.user.setActivity("live porn", {
+bot.user.setActivity("Rueben Scripts", {
       type: "STREAMING",
-      url: "https://www.twitch.tv/monstercat"
+      url: "https://www.twitch.tv/Rueben"
     });
 })
 
@@ -43,10 +43,10 @@ bot.on("message", async message => {
        let warnreason = args.join(" ").slice(22);
         
         let warnembed = new Discord.RichEmbed()
-        .setThumbnail("https://cdn.discordapp.com/attachments/485820357975080981/485910357785837579/images.jpg")
+        .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png")
         .setColor("#c700ff")
         .addField("Warn Reason:", warnreason)
-        .setDescription("You have been warned in ***BigNiggaRebellion***")
+        .setDescription("You have been warned in ***Rueben Scripts***")
             
        message.reply("***User has been warned.***");   
             
@@ -55,12 +55,12 @@ bot.on("message", async message => {
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\       
  
    if(cmd === `${prefix}yt`){
-     message.reply("YOU NIGGA STOP WATCHING YOUTUBE, GET YO SWEATY ASS OUT THERE AND REBEL");
+     message.reply("Unknown to the owner.");
  }   
       
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\
-  if(cmd === `${prefix}Group`){
-  message.reply("YO NIGGA, THE NIGGA REBELLION BROKE NIGGA, GET YOU ASS OUT THERE ROBBING THAT DOSH NIGGA $$$$$$$$")
+  if(cmd === `${prefix}Invite`){
+  message.reply("***Use this to invite people.*** https://discord.gg/Xrx39dk")
   }
  //---------------------------------------------------------------\\//---------------------------------------------------------------\\      
 
@@ -69,8 +69,8 @@ if(cmd === `${prefix}shout`){
      let announcement = args.join(" ");
      let embed = new Discord.RichEmbed()
      .setDescription(announcement)
-     .setTitle("NIGGA ANNOUNCEMENT")
-     .setThumbnail("https://cdn.discordapp.com/attachments/485820357975080981/485910920728412170/images.jpg")
+     .setTitle("Announcement")
+     .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png")
      .setColor("#c700ff")
       message.delete();
      message.channel.send(embed)
@@ -127,7 +127,7 @@ if (cmd === `${prefix}report`){
    let reason = args.join(" ").slice(22);
 
    let reportembed = new Discord.RichEmbed()
-   .setThumbnail("https://cdn.discordapp.com/attachments/485820357975080981/485910920728412170/images.jpg")   
+   .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png")   
    .setDescription("Reports")
    .setColor("#c700ff")
    .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
@@ -159,7 +159,7 @@ if (cmd === `${prefix}report`){
   if(kUser.hasPermission("KICK_MEMBERS")) return message.reply("Sorry that user cannot be kicked.");
 
   let kEmbed = new Discord.RichEmbed()
-   .setThumbnail("https://cdn.discordapp.com/attachments/485820357975080981/485910920728412170/images.jpg") 
+   .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png") 
   .setDescription("/KICK/")
   .setColor("#62a4f5")
   .addField("Kicked User.", `${kUser} with the ID: ${kUser.id}`)
@@ -193,7 +193,7 @@ if (cmd === `${prefix}report`){
   
   
     let bEmbed = new Discord.RichEmbed()
-    .setThumbnail("https://cdn.discordapp.com/attachments/485820357975080981/485910920728412170/images.jpg")    
+    .setThumbnail("https://cdn.discordapp.com/attachments/485822207306498048/486448151662952468/images.png)    
     .setDescription("/BAN/")
     .setColor("#FF0033")
     .addField("Banned User.", `${bUser} with the ID: ${bUser.id}`)
